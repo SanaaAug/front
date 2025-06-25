@@ -1,0 +1,60 @@
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 100vh;           
+  background-color: #000000;
+}
+
+.auth-container {
+  width: 320px;
+  padding: 24px;
+  background: #666666;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-container input,
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.home-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  background: black;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+button.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  margin-top: 12px;
+}
+
+
