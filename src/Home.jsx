@@ -3,7 +3,7 @@
 function Home({ user, onLogout }) {
   const handleChangePassword = () => {
     e.preventDefault()
-    fetch('http://localhost:3000/changepass', {
+    fetch('https://back-0fft.onrender.com/changepass', {
     method: 'POST',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json' },
@@ -21,7 +21,7 @@ function Home({ user, onLogout }) {
 
   const handleDeleteAccount = async (e)=>{
     e.preventDefault()
-    fetch('http://localhost:3000/delete', {
+    fetch('https://back-0fft.onrender.com/delete', {
     method: 'DELETE',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json' },
@@ -39,7 +39,7 @@ function Home({ user, onLogout }) {
 
   const handleLogout = async (e) =>{
     e.preventDefault();
-    fetch('http://localhost:3000/logout', {
+    fetch('https://back-0fft.onrender.com/logout', {
     method: 'POST',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json' },

@@ -10,7 +10,7 @@ function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3000/', { credentials: 'include' })
+    fetch('https://back-0fft.onrender.com/', { credentials: 'include' })
       .then((res) => res.ok ? res.json() : null)
       .then((data) => {
         if (data) {
@@ -42,16 +42,16 @@ function Login({ onSwitchToSignup, onLoginSuccess }) {
   const [user, setUser] = useState('');
   
   const handleGoogleAuth = () => {
-    window.location.href = 'http://localhost:3000/auth/google';
+    window.location.href = 'https://back-0fft.onrender.com/auth/google';
   };
 
   const handleFacebookAuth = () => {
-    window.location.href = 'http://localhost:3000/auth/facebook';
+    window.location.href = 'https://back-0fft.onrender.com/auth/facebook';
   };
 
   const handleLogin = async (e) =>{
     e.preventDefault();
-    fetch('http://localhost:3000/login', {
+    fetch('https://back-0fft.onrender.com/login', {
     method: 'POST',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json' },

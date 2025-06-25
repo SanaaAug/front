@@ -10,7 +10,7 @@ function Signup({ onSwitchToLogin }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:3000/signup', {
+    fetch('https://back-0fft.onrender.com/signup', {
     method: 'POST',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json' },

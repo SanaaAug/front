@@ -37,7 +37,7 @@ html, body, #root {
   max-width: 400px;
   margin: 40px auto;
   padding: 24px;
-  background: black;
+  background: yellow;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
