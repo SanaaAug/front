@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Signup({ onSwitchToLogin }) {
+function Signup({ onSwitchToLogin, onLoginSuccess}) {
   const [form, setForm] = useState({
     firstName: '',
     lastName: '',
@@ -27,8 +27,8 @@ function Signup({ onSwitchToLogin }) {
       credentials: 'include',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        first_name: form.firstName,
-        last_name: form.lastName,
+        firstname: form.firstName,
+        lastname: form.lastName,
         username: form.username,
         email: form.email,
         password: form.password,
@@ -40,7 +40,7 @@ function Signup({ onSwitchToLogin }) {
       })
       .then(data => {
         console.log('Signup success:', data);
-        // Optionally redirect or notify
+        onLoginSuccess(data)
       })
       .catch(err => {
         console.error(err);

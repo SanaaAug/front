@@ -26,7 +26,7 @@ function App() {
   }
 
   if (view === "signup") {
-    return <Signup onSwitchToLogin={() => setView("login")} />;
+    return <Signup onSwitchToLogin={() => setView("login")} onLoginSuccess={(u) => { setUser(u); setView("home"); }}/>;
   }
 
   if (view === "home" && user) {
