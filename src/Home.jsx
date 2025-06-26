@@ -58,7 +58,7 @@ function Home({ user, onLogout }) {
 
   return (
     <div className="home-container">
-      <img src={user.profilePic} alt="Profile" className="profile-pic" />
+      <img src={user.pictureurl} alt="Profile" className="profile-pic" />
       <h2>Welcome, {user.username}</h2>
       <p>
         Name: {user.firstname} {user.lastname}
